@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+        <title>IRIS</title>
+        <!-- Bootstrap  CSS -->
+        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+        <link href="../plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+        <!-- Menu CSS -->
+        <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+        <!-- animation CSS -->
+        <link href="css/animate.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- color CSS -->
+        <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
+        <!-- <link rel="stylesheet" type="text/css" href="../plugins/bower_components/datatables/jquery.dataTables.min.css" /> -->
+    </head>
+    <body class="fix-sidebar">
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="cssload-speeding-wheel"></div>
+        </div>
+        <div id="wrapper">
+            <!-- Top Navigation -->
+            <nav class="navbar navbar-default navbar-static-top m-b-0">
+                <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+                <div class="top-left-part">
+                    <!--  <a class="logo" href="index.html"><b>
+                        <img src="../plugins/images/01.png" alt="home" class="dark-logo" />
+                    </a> -->
+                </div>
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li>
+                        <a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a>
+                    </li>
+                    <li>
+                        <form role="search" class="app-search hidden-xs">
+                            <input type="text" placeholder="Axtar..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> 
+                        </form>
+                    </li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li class="dropdown"> 
+                        <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#">
+                            <i class="icon-envelope"></i>
+                            <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+                        </a>
+                        <ul class="dropdown-menu mailbox animated bounceInDown">
+                            <li>
+                                <div class="drop-title">2 yeni mesajınız var</div>
+                            </li>
+                            <li>
+                                <div class="message-center">
+                                    <a href="#">
+                                        <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                        <h5>Xəlil Rəcəbov</h5> <span class="mail-desc">Zəhmət olmasa əlaqə saxlayın</span> <span class="time">9:30 AM</span> </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img"> <img src="../plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                        <h5>Zamin Dadaşov</h5> <span class="mail-desc">Zəhmət olmasa əlaqə saxlayın</span> <span class="time">9:10 AM</span> </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="text-center" href="javascript:void(0);"> <strong>Bütün mesajlara bax</strong> <i class="fa fa-angle-right"></i> </a>
+                            </li>
+                        </ul>
+                            <!-- /.dropdown-messages -->
+                    </li>
+                    </li>
+                </ul>
+                </div>
+                <!-- /.navbar-header -->
+                <!-- /.navbar-top-links -->
+                <!-- /.navbar-static-side -->
+            </nav>
+            <!-- End Top Navigation -->
+            <!-- Left navbar-header -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+                    <div class="user-profile">
+                        <div class="dropdown user-pro-body">
+                            <div><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"></div> <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Samir Rüstəmov <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated flipInY">
+                                <li><a href="#"><i class="ti-user"></i> Profilim</a></li>
+                                <li><a href="#"><i class="ti-email"></i> Gələnlər</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="ti-settings"></i> Hesab Məlumatları</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="login.html"><i class="fa fa-power-off"></i> Çıxış</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search hidden-sm hidden-md hidden-lg">
+                            <!-- input-group -->
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Axtar..."> 
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"> <i class="fa fa-search"></i></button>
+                                </span> 
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li class="nav-small-cap m-t-10">--- Əsas Menu</li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-users" data-icon="v"></i> <span class="hide-menu"> İşçilər <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                <li> <a href="#">Əlavə Et</a> </li>
+                                <li> <a href="#">Bütün İşçilər</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-building" data-icon="v"></i> <span class="hide-menu"> Departamentlər <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                <li> <a href="#">Əlavə Et</a> </li>
+                                <li> <a href="#">Bütün Departamentlər</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-server" data-icon="v"></i> <span class="hide-menu"> Davamiyyət <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                <li> <a href="#">Lorem</a> </li>
+                                <li> <a href="#">İpsum</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-money" data-icon="v"></i> <span class="hide-menu"> Əmək Haqqı <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                <li> <a href="#">Lorem</a> </li>
+                                <li> <a href="#">İpsum</a> </li>
+                            </ul>
+                        </li>
+                        <!--  <li> <a href="javascript:void(0)" class="waves-effect"><i data-icon="F" class="linea-icon linea-software fa-fw"></i> <span class="hide-menu">Multi-Level Dropdown<span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                <li> <a href="javascript:void(0)">Second Level Item</a> </li>
+                                <li> <a href="javascript:void(0)">Second Level Item</a> </li>
+                                <li> <a href="javascript:void(0)" class="waves-effect">Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li> <a href="javascript:void(0)">Third Level Item</a> </li>
+                                        <li> <a href="javascript:void(0)">Third Level Item</a> </li>
+                                        <li> <a href="javascript:void(0)">Third Level Item</a> </li>
+                                        <li> <a href="javascript:void(0)">Third Level Item</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <li><a href="login.html" class="waves-effect"><i class="icon-logout fa-fw"></i> <span class="hide-menu">Çıxış</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Left navbar-header end -->
+            <!-- Page Content -->
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <div class="row bg-title">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <h4 class="page-title">Bütün İşçilər</h4>
+                        </div>
+                        <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                            <ol class="breadcrumb">
+                                <li><a href="#">İRİS</a></li>
+                                <li class="active">Bütün İşçilər</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="white-box">
+                                <p class="text-muted m-b-30">Hesabat al: Kopyala, CSV, Excel, PDF & Çap Et</p>
+                                <div class="table-responsive">
+                                    <table id="example23" class="display nowrap" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>İşçi İD</th>
+                                                <th>Ad</th>
+                                                <th>Vəzifə</th>
+                                                <th>Departament</th>
+                                                <th>Qeydiyyat tarixi</th>
+                                                <th>Əlaqə</th>
+                                                <th>Admin</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                        <tr>
+                                            <th>İşçi İD</th>
+                                            <th>Ad</th>
+                                            <th>Vəzifə</th>
+                                            <th>Departament</th>
+                                            <th>Qeydiyyat tarixi</th>
+                                            <th>Əlaqə</th>
+                                            <th>Admin</th>
+                                        </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr>
+                                                <td>062457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012477</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012557</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>212457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012497</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012457</td>
+                                                <td>Samir Rüstəmov</td>
+                                                <td>İR Mütəxəssis</td>
+                                                <td>İR Departament</td>
+                                                <td>05-05-2017</td>
+                                                <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.container-fluid -->
+                    <!-- <footer class="footer text-center" style="position:fixed;"> 2017 &copy;</footer> -->
+                </div>
+                <!-- /#page-wrapper -->
+            </div>
+            <!-- /#wrapper -->
+        </div>
+
+        <!-- jQuery -->
+        <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="bootstrap/dist/js/tether.min.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+        <!-- Menu Plugin JavaScript -->
+        <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+        <!--slimscroll JavaScript -->
+        <script src="js/jquery.slimscroll.js"></script>
+        <!--Wave Effects -->
+        <script src="js/waves.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="js/custom.min.js"></script>
+        <!--Style Switcher -->
+        <script src="../plugins/bower_components/datatables/jquery.dataTables.min.js" type="text/javascript"></script>
+        <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+        <!-- start - This is for export functionality only -->
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+        <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+        <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+        <!-- end - This is for export functionality only -->
+        <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
