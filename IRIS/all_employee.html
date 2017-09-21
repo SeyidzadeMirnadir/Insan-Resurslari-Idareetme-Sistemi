@@ -86,7 +86,7 @@
                 <div class="sidebar-nav navbar-collapse slimscrollsidebar">
                     <div class="user-profile">
                         <div class="dropdown user-pro-body">
-                            <div><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"></div> <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Samir Rüstəmov <span class="caret"></span></a>
+                            <div><img src="../plugins/images/person_docs/1.jpg" alt="user-img" class="img-circle"></div> <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Samir Rüstəmov <span class="caret"></span></a>
                             <ul class="dropdown-menu animated flipInY">
                                 <li><a href="#"><i class="ti-user"></i> Profilim</a></li>
                                 <li><a href="#"><i class="ti-email"></i> Gələnlər</a></li>
@@ -111,14 +111,14 @@
                         <li class="nav-small-cap m-t-10">--- Əsas Menu</li>
                         <li><a href="#" class="waves-effect"><i class="fa fa-users" data-icon="v"></i> <span class="hide-menu"> İşçilər <span class="fa arrow"></span></span></a>
                             <ul class="nav nav-second-level">
-                                <li> <a href="#">Əlavə Et</a> </li>
-                                <li> <a href="#">Bütün İşçilər</a> </li>
+                                <li> <a href="add_employee.html">Əlavə Et</a> </li>
+                                <li> <a href="all_employee.html">Bütün İşçilər</a> </li>
                             </ul>
                         </li>
                         <li><a href="#" class="waves-effect"><i class="fa fa-building" data-icon="v"></i> <span class="hide-menu"> Departamentlər <span class="fa arrow"></span></span></a>
                             <ul class="nav nav-second-level">
-                                <li> <a href="#">Əlavə Et</a> </li>
-                                <li> <a href="#">Bütün Departamentlər</a> </li>
+                                <li> <a href="add_department.html">Əlavə Et</a> </li>
+                                <li> <a href="all_department.html">Bütün Departamentlər</a> </li>
                             </ul>
                         </li>
                         <li><a href="#" class="waves-effect"><i class="fa fa-server" data-icon="v"></i> <span class="hide-menu"> Davamiyyət <span class="fa arrow"></span></span></a>
@@ -147,7 +147,7 @@
                                 </li>
                             </ul>
                         </li> -->
-                        <li><a href="login.html" class="waves-effect"><i class="icon-logout fa-fw"></i> <span class="hide-menu">Çıxış</span></a></li>
+                        <li><a href="#" class="waves-effect"><i class="icon-logout fa-fw"></i> <span class="hide-menu">Çıxış</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -202,7 +202,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button id="GO" class="btn btn-default btn-outline btn-danger m-r-5 btn-js">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012477</td>
@@ -211,7 +211,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012557</td>
@@ -220,7 +220,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>212457</td>
@@ -229,7 +229,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012497</td>
@@ -238,7 +238,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -247,7 +247,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -256,7 +256,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -265,7 +265,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -274,7 +274,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -283,7 +283,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -292,7 +292,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -301,7 +301,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -310,7 +310,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -319,7 +319,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -328,7 +328,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                             <tr>
                                                 <td>012457</td>
@@ -337,7 +337,7 @@
                                                 <td>İR Departament</td>
                                                 <td>05-05-2017</td>
                                                 <td><span>+994502256060</span><br><span>samir@gmail.com</span></td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax</button><button class="btn btn-default btn-outline btn-danger">Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
+                                                <td><button class="btn btn-default btn-outline btn-danger m-r-5 ">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
                                             </tr>
                                         </tbody>
                                     </table>

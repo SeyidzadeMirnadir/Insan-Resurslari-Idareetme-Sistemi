@@ -30,6 +30,7 @@ $('#example23').DataTable({
         });
 // Datatable Customize end
 
+// File upload plugin start
 $('.dropify').dropify({
     messages:{
         'default': 'Yükləmək istədiyiniz faylı bura yaxınlaşdırın',
@@ -39,3 +40,19 @@ $('.dropify').dropify({
 
     }
 });
+// File upload plugin end
+
+// view_edit page buttons start
+$(".js_form_edit").click(function(){
+    $(".js_form p").css("display","none");
+    $(".js_form input").css("display","block");
+})
+$(".js_form_cancel").click(function(){
+    $(".js_form input").css("display","none");
+    $(".js_form p").css("display","block");
+})
+// view_edit page buttons end
+
+$(".").click(function(){
+    alert("asdasd")
+})

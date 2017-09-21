@@ -11,8 +11,11 @@
         <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
         <!-- Menu CSS -->
         <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../plugins/bower_components/dropify/dist/css/dropify.min.css">
         <!-- animation CSS -->
         <link href="css/animate.css" rel="stylesheet">
+        <!-- Popup CSS -->
+        <link href="../plugins/bower_components/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
         <!-- Custom CSS -->
         <link href="css/style.css" rel="stylesheet">
         <!-- color CSS -->
@@ -72,7 +75,6 @@
                             </li>
                         </ul>
                             <!-- /.dropdown-messages -->
-                    </li>
                     </li>
                 </ul>
                 </div>
@@ -147,7 +149,7 @@
                                 </li>
                             </ul>
                         </li> -->
-                        <li><a href="#" class="waves-effect"><i class="icon-logout fa-fw"></i> <span class="hide-menu">Çıxış</span></a></li>
+                        <li><a href="#" class="waves-effect"><i class="icon-logout fa-fw"></i><span class="hide-menu">Çıxış</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -157,154 +159,98 @@
                 <div class="container-fluid">
                     <div class="row bg-title">
                         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                            <h4 class="page-title">Bütün Departamentlər</h4>
+                            <h4 class="page-title">Bax - Dəyiş Departamentlər</h4>
                         </div>
                         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                             <ol class="breadcrumb">
                                 <li><a href="#">İRİS</a></li>
-                                <li class="active">Bütün Departamentlər</li>
+                                <li class="active">Bax - Dəyiş Departamentlər</li>
                             </ol>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="white-box">
-                                <p class="text-muted m-b-30">Hesabat al: Kopyala, CSV, Excel, PDF & Çap Et</p>
-                                <div class="table-responsive">
-                                    <table id="example23" class="display nowrap" cellspacing="0" width="100%">
-                                        <thead>
-                                            <tr>
-                                                <th>İD</th>
-                                                <th>Ad</th>
-                                                <th>Direktor</th>
-                                                <th>Qeydiyyat tarixi</th>
-                                                <th>Şöbə Sayı</th>
-                                                <th>Bölmə Sayı</th>
-                                                <th>Admin</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                        <tr>
-                                            <th>İD</th>
-                                            <th>Ad</th>
-                                            <th>Direktor</th>
-                                            <th>Qeydiyyat tarixi</th>
-                                            <th>Şöbə Sayı</th>
-                                            <th>Bölmə Sayı</th>
-                                            <th>Admin</th>
-                                        </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>098456</td>
-                                                <td>İnsan Resursları</td>
-                                                <td>Verdiyev Həsən İmamyar oğlu</td>
-                                                <td>05-08-2017</td>
-                                                <td>12</td>
-                                                <td>26</td>
-                                                <td><button class="btn btn-default btn-outline btn-danger">Bax/Dəyiş</button><button class="btn btn-default btn-outline btn-danger">Sil</button></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <button class="btn btn-default js_form_cancel pull-right m-l-5">Ləğv et</button>
+                                <button id = "GO"class="btn btn-info js_form_edit pull-right "> <i class="fa fa-pencil"></i> Dəyiş</button>
+                                <div class="panel-wrapper collapse in" aria-expanded="true">
+                                    <div class="panel-body">
+                                        <form class="form-horizontal js_form" role="form">
+                                            <div class="form-body">
+                                                <h3 class="box-title">Departament</h3>
+                                                <hr class="m-t-0 m-b-40">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Adı:</label>
+                                                            <div class="col-md-9">
+                                                                <p class="form-control-static"> İR Departamenti </p>
+                                                                <input class="form-control" type="text" value="İR Departamenti" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--/span-->
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Direktor:</label>
+                                                            <div class="col-md-9">
+                                                                <p class="form-control-static"> Asimov Nizami Vaqif oğlu </p>
+                                                                <input class="form-control" type="text" value="Asimov Nizami Vaqif oğlu" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--/span-->
+                                                </div>
+                                                <!--/row-->
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Yaradılma tarixi:</label>
+                                                            <div class="col-md-9">
+                                                                <p class="form-control-static"> 05-05-1987 </p>
+                                                                <input class="form-control" type="text" value="05-05-1987" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--/span-->
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Şöbə:</label>
+                                                            <div class="col-md-9">
+                                                                <p class="form-control-static"> H4 </p>
+                                                                <input class="form-control" type="text" value="H4" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--/span-->
+                                                </div>
+                                                <!--/row-->
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Bölmə:</label>
+                                                            <div class="col-md-9">
+                                                                <p class="form-control-static">  B9 </p>
+                                                                <input class="form-control" type="text" value="H4" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-actions">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-offset-3 col-md-9">
+                                                                <button type="submit" class="btn btn-info"> <i class="fa fa-pencil"></i> Yadda Saxla</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6"> </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -329,6 +275,9 @@
         <script src="js/jquery.slimscroll.js"></script>
         <!--Wave Effects -->
         <script src="js/waves.js"></script>
+        <!-- Magnific popup JavaScript -->
+        <script src="../plugins/bower_components/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../plugins/bower_components/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
         <!-- Custom Theme JavaScript -->
         <script src="js/custom.min.js"></script>
         <!--Style Switcher -->
@@ -344,6 +293,8 @@
         <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
         <!-- end - This is for export functionality only -->
         <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+        <!-- jQuery file upload -->
+        <script src="../plugins/bower_components/dropify/dist/js/dropify.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
