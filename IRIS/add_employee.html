@@ -420,5 +420,18 @@
         <!-- jQuery file upload -->
         <script src="../plugins/bower_components/dropify/dist/js/dropify.min.js"></script>
         <script src="js/script.js"></script>
+        <script type="text/javascript">
+            // File upload plugin start
+            $('.dropify').dropify({
+                messages:{
+                    'default': 'Yükləmək istədiyiniz faylı bura yaxınlaşdırın',
+                    'replace': 'Faylı dəyişmək üçün klikləyin',
+                    'remove':  'Sil',
+                    'error':   'Seçdiyiniz fayl ölçüsü çox böyükdür'
+
+                }
+            });
+            // File upload plugin end
+        </script>
     </body>
 </html>

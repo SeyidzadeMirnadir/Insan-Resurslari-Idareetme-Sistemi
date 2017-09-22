@@ -30,17 +30,7 @@ $('#example23').DataTable({
         });
 // Datatable Customize end
 
-// File upload plugin start
-$('.dropify').dropify({
-    messages:{
-        'default': 'Yükləmək istədiyiniz faylı bura yaxınlaşdırın',
-        'replace': 'Faylı dəyişmək üçün klikləyin',
-        'remove':  'Sil',
-        'error':   'Seçdiyiniz fayl ölçüsü çox böyükdür'
 
-    }
-});
-// File upload plugin end
 
 // view_edit page buttons start
 $(".js_form_edit").click(function(){
@@ -53,6 +43,8 @@ $(".js_form_cancel").click(function(){
 })
 // view_edit page buttons end
 
-$(".").click(function(){
-    alert("asdasd")
-})
+// $("#example23 .m-r-5").click(function(){
+//     var newURL = "file:///C:/Users/User/Desktop/IRIS/IRIS/view_edit_employee.html"
+//     window.location.replace(newURL)
+// })
+
